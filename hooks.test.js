@@ -9,11 +9,11 @@ beforeEach(() => {
   user = new User(testEmail);
 });
 
-it("should have an email property", () => {
+it.concurrent("should have an email property", () => {
   expect(user).toHaveProperty("email");
 });
 
-it("should update the email", () => {
+it.concurrent("should update the email", () => {
   const newTestEmail = "newtest@test.com";
 
   user.updateEmail(newTestEmail);
@@ -25,13 +25,13 @@ it("should store the provided email value", () => {
   expect(user.email).toBe(testEmail);
 });
 
-it("should clean the email", () => {
+it.concurrent("should clean the email", () => {
   user.cleanEmail();
 
   expect(user.email).toBe("");
 });
 
-it("should still have an email property after cleaning", () => {
+it.concurrent("should still have an email property after cleaning", () => {
   user.cleanEmail();
 
   expect(user).toHaveProperty("email");
