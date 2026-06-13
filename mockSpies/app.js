@@ -1,11 +1,11 @@
 import crypto from "crypto";
 import { saveTokeToFile } from "./utils/io.js";
 
-const log = (message) => {
+export const log = (message) => {
   console.log(message);
 };
 
-const generateToken = (logger) => {
+export const generateToken = (logger) => {
   const token = crypto.randomBytes(32).toString("hex");
 
   if (logger) logger(token);
@@ -13,7 +13,7 @@ const generateToken = (logger) => {
   return token;
 };
 
-const storeToken = async (data) => {
+export const storeToken = async (data) => {
   if (!data) throw new Error("No data provided");
 
   const filename = `data-${Date.now()}.txt`;
@@ -21,6 +21,6 @@ const storeToken = async (data) => {
   await saveTokeToFile(data, filename);
 };
 
-const data = generateToken(log);
+// const data = generateToken(log);
 
-storeToken(data);
+// storeToken(data);

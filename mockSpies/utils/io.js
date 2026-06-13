@@ -1,8 +1,8 @@
 import path from "path";
-import fs from "fs";
+import { promises as fs } from "fs";
 
 export const saveTokeToFile = (data, filename) => {
-  const storagePath = path.join(process.cwd(), "data", filename);
+  const storagePath = path.join(process.cwd(), "mockspies/data", filename);
 
-  return fs.promises.writeFile(storagePath, data);
+  return fs.writeFile(storagePath, data);
 };
