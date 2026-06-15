@@ -7,5 +7,7 @@ describe("generateToken()", () => {
     generateToken(loggerFn);
 
     expect(loggerFn).toHaveBeenCalled();
+    // expect(loggerFn).toHaveBeenCalledTimes(1);
+    // expect(loggerFn).toHaveBeenCalledWith();
   });
 });
