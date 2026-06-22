@@ -3,13 +3,16 @@ import { expect, it, vi } from "vitest";
 import { saveTokeToFile } from "./io";
 
 vi.mock("fs");
-vi.mock("path", () => {
-  return {
-    default: {
-      join: (...args) => args[args.length - 1],
-    },
-  };
-});
+
+// vi.mock("path", () => {
+//   return {
+//     default: {
+//       join: (...args) => args[args.length - 1],
+//     },
+//   };
+// });
+
+vi.mock("path");
 
 it("should store the token in file", () => {
   const data = "dummy-token";
@@ -20,5 +23,3 @@ it("should store the token in file", () => {
   // expect(fs.writeFile).toHaveBeenCalled();
   expect(fs.writeFile).toHaveBeenCalledWith(filename, data);
 });
-
-// off days
