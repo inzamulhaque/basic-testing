@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import PrimaryButton from "./PrimaryButton";
+import PrimaryButton from "../components/PrimaryButton";
 
 describe("PrimaryButton", () => {
   it("should render the button with default value", () => {
