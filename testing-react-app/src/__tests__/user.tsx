@@ -28,3 +28,11 @@ it("should render the user component h2", () => {
 
   expect(element).toBeInTheDocument();
 });
+
+it("should render the user component and test by placeholder", () => {
+  render(<User />);
+
+  const element = screen.getByPlaceholderText("Enter Email");
+
+  expect(element).toBeInTheDocument();
+});
