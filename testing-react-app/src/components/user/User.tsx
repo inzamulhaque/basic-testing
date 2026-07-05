@@ -51,6 +51,7 @@ const User = () => {
           placeholder="Enter Name"
           value={formData.name}
           onChange={handleChange}
+          id="name"
         />
 
         <label htmlFor="email">Email</label>
@@ -60,6 +61,7 @@ const User = () => {
           placeholder="Enter Email"
           value={formData.email}
           onChange={handleChange}
+          id="email"
         />
 
         <button type="submit">Add User</button>
