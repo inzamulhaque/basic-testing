@@ -8,7 +8,7 @@ type FormData = {
 
 const User = () => {
   const [formData, setFormData] = useState<FormData>({
-    name: "",
+    name: "User1",
     email: "",
   });
 
@@ -42,6 +42,7 @@ const User = () => {
   return (
     <div className="container">
       <h1>User Form</h1>
+      <p>Add Your Details</p>
 
       <form onSubmit={handleSubmit} className="form">
         <label htmlFor="name">Name</label>
@@ -94,6 +95,21 @@ const User = () => {
           )}
         </tbody>
       </table>
+
+      <img src="" alt="testing image" />
+
+      <div title="testing title"></div>
+
+      <div data-testid="testing-id">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ipsum
+          exercitationem blanditiis explicabo in culpa illum non? In alias
+          laudantium incidunt facilis, laborum minima cum facere qui vitae
+          voluptatibus ipsam exercitationem atque sequi tenetur id illum tempora
+          nihil sunt saepe illo beatae. Ut eius recusandae ratione quos ab vitae
+          fugiat?
+        </p>
+      </div>
     </div>
   );
 };
