@@ -88,3 +88,13 @@ it("should render the user component and test by data test id", () => {
 
   expect(element).toBeInTheDocument();
 });
+
+it("should render the user component and test submit button", () => {
+  render(<User />);
+
+  const element = screen.queryByRole("button", {
+    name: "Submit",
+  });
+
+  expect(element).not.toBeInTheDocument();
+});

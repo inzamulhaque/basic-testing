@@ -14,6 +14,8 @@ const User = () => {
 
   const [users, setUsers] = useState<FormData[]>([]);
 
+  const [editMode, setEditMode] = useState<boolean>(false);
+
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
@@ -65,7 +67,13 @@ const User = () => {
           id="email"
         />
 
-        <button type="submit">Add User</button>
+        {/* <button type="submit">Add User</button> */}
+
+        {editMode ? (
+          <button type="submit">Submit</button>
+        ) : (
+          <button type="submit">Edit</button>
+        )}
       </form>
 
       <h2>User List</h2>

@@ -1,8 +1,11 @@
 import "./App.css";
+import FruitList from "./components/FruitList/FruitList";
 import PrimaryButton from "./components/PrimaryButton";
 import User from "./components/user/User";
 
 function App() {
+  const fruits = ["Apple", "Banana", "Orange", "Mango", "Grapes", "Pineapple"];
+
   return (
     <>
       <div>
@@ -11,6 +14,8 @@ function App() {
         <PrimaryButton actionType="Delete" /> */}
 
         <User />
+
+        {/* <FruitList fruitList={fruits} /> */}
       </div>
     </>
   );

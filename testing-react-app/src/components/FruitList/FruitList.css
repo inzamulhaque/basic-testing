@@ -1,0 +1,21 @@
+.fruit-container {
+  width: 300px;
+  margin: 20px auto;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.fruit-container h2 {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.fruit-list {
+  padding-left: 20px;
+}
+
+.fruit-list li {
+  margin: 8px 0;
+}
