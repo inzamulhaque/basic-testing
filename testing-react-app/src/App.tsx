@@ -2,9 +2,25 @@ import "./App.css";
 import FruitList from "./components/FruitList/FruitList";
 import PrimaryButton from "./components/PrimaryButton";
 import User from "./components/user/User";
+import UserList from "./components/UserList/UserList";
 
 function App() {
   const fruits = ["Apple", "Banana", "Orange", "Mango", "Grapes", "Pineapple"];
+
+  const users = [
+    {
+      name: "John Doe",
+      age: 25,
+    },
+    {
+      name: "Jane Smith",
+      age: 30,
+    },
+    {
+      name: "Bob Brown",
+      age: 35,
+    },
+  ];
 
   return (
     <>
@@ -13,9 +29,11 @@ function App() {
         <PrimaryButton />
         <PrimaryButton actionType="Delete" /> */}
 
-        <User />
+        {/* <User /> */}
 
         {/* <FruitList fruitList={fruits} /> */}
+
+        <UserList users={users} />
       </div>
     </>
   );
