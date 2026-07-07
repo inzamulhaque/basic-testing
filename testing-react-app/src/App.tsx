@@ -1,4 +1,5 @@
 import "./App.css";
+import Counter from "./components/Counter/Counter";
 import Form from "./components/Form/Form";
 import FruitList from "./components/FruitList/FruitList";
 import PrimaryButton from "./components/PrimaryButton";
@@ -39,7 +40,9 @@ function App() {
 
         {/* <UserEvent /> */}
 
-        <Form onSubmit={(data) => console.log(data)} />
+        {/* <Form onSubmit={(data) => console.log(data)} /> */}
+
+        <Counter />
       </div>
     </>
   );
