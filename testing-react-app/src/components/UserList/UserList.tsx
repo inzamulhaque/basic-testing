@@ -36,7 +36,7 @@ const UserList = ({ users }: UserListProps) => {
           </tr>
         </thead>
 
-        <tbody>
+        <tbody data-testid="user-list-body">
           {users.map((user, index) => (
             <tr key={`${user.name}-${index}`}>
               <td>{index + 1}</td>

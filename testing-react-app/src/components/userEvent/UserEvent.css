@@ -1,0 +1,89 @@
+/* Main Container */
+.user-event {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Flex Container */
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+/* Title */
+.title {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* User Input Text */
+.user-text {
+  margin: 0;
+  color: #2563eb;
+  font-size: 22px;
+}
+
+/* Input */
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #2563eb;
+}
+
+/* Love Count */
+.love-count {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Button Container */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Common Button */
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #dc2626;
+}
