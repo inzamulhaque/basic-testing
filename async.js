@@ -36,5 +36,3 @@ encryptMessagePromise(JSON.stringify(message), secretKey).then(
     console.log(encryptedMessage);
   },
 );
-
-// off day
