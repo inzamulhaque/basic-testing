@@ -8,3 +8,11 @@ it("should reverse an array", () => {
 
   expect(result).toEqual(arr.reverse());
 });
+
+it("should not return the original array", () => {
+  const arr = [1, 2, 3, 4, 5];
+
+  const result = reverseArray(arr);
+
+  expect(result).not.toBe(arr);
+});
