@@ -1,6 +1,10 @@
 const reverseArray = (arr) => {
   const reverseArr = [];
 
+  if (!Array.isArray(arr)) {
+    throw new Error("Input must be an array");
+  }
+
   for (let i = arr.length - 1; i >= 0; i--) {
     reverseArr.push(arr[i]);
   }
