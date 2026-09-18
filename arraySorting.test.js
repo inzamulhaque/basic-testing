@@ -8,3 +8,11 @@ it("should sort an array of numbers in ascending order", () => {
 
   expect(sortedArr).toEqual([1, 2, 3, 5, 8]);
 });
+
+it("should return an array", () => {
+  const arr = [5, 3, 8, 1, 2];
+
+  const result = sortArray(arr);
+
+  expect(result).toBeInstanceOf(Array);
+});
