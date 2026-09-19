@@ -16,3 +16,11 @@ it("should return an array", () => {
 
   expect(result).toBeInstanceOf(Array);
 });
+
+it("should throw an error if input is not an array", () => {
+  const number = 5;
+
+  const resultFN = () => sortArray(number);
+
+  expect(resultFN).Throw(Error, "Input must be an array");
+});
